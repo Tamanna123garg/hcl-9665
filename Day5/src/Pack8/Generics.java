@@ -1,0 +1,21 @@
+package Pack8;
+class Box<T> {
+    private T content;
+    public void setContent(T content) {
+        this.content = content;
+    }
+    public T getContent() {
+        return content;
+    }
+}
+public class Generics {
+    public static void main(String[] args) {
+        Box<Integer> integerBox = new Box<>();
+        integerBox.setContent(123);
+        System.out.println("Integer Box Content: " + integerBox.getContent());
+        Box<String> stringBox = new Box<>();
+        stringBox.setContent("Hello Generics");
+        System.out.println("String Box Content: " + stringBox.getContent());
+    }
+}
+
